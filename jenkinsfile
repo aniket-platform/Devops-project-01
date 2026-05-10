@@ -34,7 +34,7 @@ pipeline {
             mvn clean verify sonar:sonar \
               -Dsonar.projectKey=cwvj-devsecops-demo \
               -Dsonar.host.url=http://${SONAR_IP}:9000 \
-              -Dsonar.token=${sonarqube-token} \
+              -Dsonar.token=${Sonar-token} \
               -Dsonar.qualitygate.wait=true
           '''
         }
